@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="pstyl.css">
+    </head>
+    <body style="overflow: hidden; align-items: center; align-content: center;">
+        <div class="footer" style="width: max-content; top: 10px; right: 10px; align-content: center; align-items: center; justify-content: center;">
+            <p>Yohannes Bedilu</p>
+             <ul style="list-style: none; display: inline-block;">
+                <li style="display: inline; width: fit-content;">
+                    <a href="mailto:johnvictory@gmail.com" style="display: inline;"><img src="g++.png" style="width: 50px; height: 50px; display: inline;"></a>
+                </li>
+                <li style="display: inline; width: fit-content;">
+                    <a href="https://instagram.com/astrall.j?igshid=MzNlNGNkZWQ4Mg=="><img src="ig.png" style="width: 50px; height: 50px; margin-left: 10px; margin-right: 30px; display: inline;"></a>
+                </li>
+            </ul>
+            </div>
+        <h1 id="greetings"></h1>
+       <table style="padding-top: 0px;">
+             <tr>
+                <td>
+                    <div id="box" >
+                        <p>Hi, I'm Yohannes Bedilu, a 4th year computer science student at the University of Addis Ababa. I'm passionate about front end web development and I'm looking for an internship to gain experience in this field. I am a highly motivated and skilled front end web developer with a strong passion for creating beautiful and user-friendly web sites. I have a deep understanding of HTML, CSS, and JavaScript, and I am proficient in React js. I am also a quick learner and I am always eager to learn new things.</p>
+                    </div>
+                </td>
+                <td>
+                    <div id="pbox">
+                        <table>
+                            <tr>
+                                <td>
+                                    <h3 style="border-bottom: 3px solid goldenrod;">projects</h3>
+                                </td>
+                            </tr>
+                            <tr>            
+                                 <td id="proj">
+                                    <ul style="display: inline; list-style: none;">
+                                        <a href="Romec/enter.html" target="_blank" style="text-decoration: none; color: inherit; width: max-content;"> <li style="padding-bottom: 16px;">Rome Cinema</li></a>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="proj">
+                                    <p>Kozi Bonda</p>
+                                </td>
+                            </tr>
+                        </table>
+                
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul style="list-style: none; display: inline-block;">
+                        <li style="display: inline;"><img src="html.png" class="icons" style="margin-left: 250px;"></li>
+                        <li style="display: inline; padding-left: 50px;"><img src="css2.png" class="icons"></li>
+                        <li style="display: inline; padding-left: 50px;"><img src="js.png" class="icons"></li>
+                        <li style="display: inline; padding-left: 50px;"><img src="react.svg" class="icons"></li>
+                </td>
+            </tr>
+        </table>
+        <footer style="margin-top: 350px; width: 100%;">
+            <p>&nbsp;</p>
+        </footer>
+        <script>
+            const hr=new Date().getHours() 
+            let greetings
+            if(hr>=0 && hr<12){
+                greetings='Good Morning'
+            }
+            else if(hr>=12 && hr<18){
+                greetings='Good Afternoon'
+            }
+            else if(hr>=18){
+                greetings='Good Night'
+            }
+
+            document.getElementById('greetings').innerHTML = greetings;
+        </script>
+    </body>
+</html>

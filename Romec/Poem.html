@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Poem</title>
+        <link rel="stylesheet" href="MyStyle.css">
+        <script src="for.js"></script>
+        
+    </head>
+    <body  style="background-color: #282D35;" id="uf">
+        <div class="container">
+            <div class="love">
+                <p style="font-size: 50px; letter-spacing: 3px; word-spacing: 7px;"><strong>I L<img class="heart" src="heart.png">ve y<img class='heart' src="heart.png">u </strong></p>
+            </div>
+        </div>
+        <div style="background-color: aqua; opacity: 0.3; margin-left: 400px; margin-right: 400px; padding: 10px;">
+            <h1 id="title"></h1>
+                <em>A poem from <span id="from"></span> to <span id="to"></span></em><br><br>
+            <p id="Poem" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"></p>
+            </div>
+            <script>
+                var title = sessionStorage.getItem("poemTitle");
+                    document.getElementById("title").innerHTML = title;
+                var poemLine = sessionStorage.getItem("poem");
+                var poem=poemLine.split("/").join("<br>")
+                    document.getElementById("Poem").innerHTML = poem;
+                var lname = sessionStorage.getItem("lname");
+                    document.getElementById("to").innerHTML = lname ;
+                var name = sessionStorage.getItem("name");
+                    document.getElementById("from").innerHTML = name;
+
+                if (title===""){
+                    document.getElementById("title").innerHTML = "From My Heart"
+                }
+                if(poem===""){
+                    document.getElementById('Poem').innerHTML=" A million stars up in the sky. <br>One shines brighter - I can't deny. <br>A love so precious, a love so true, <br>a love that comes from me to you. <br>The angels sing when you are near. <br>Within your arms I have nothing to fear. <br>You always know just what to say. <br>Just talking to you makes my day. <br>I love you, honey, with all of my heart. <br>Together forever and never to part."
+                }
+                if(lname===""){
+                    document.getElementById('to').innerHTML="You"
+                }
+                if(name===""){
+                    document.getElementById('from').innerHTML="Me"
+                }
+            </script>
+    </body>
+</html>

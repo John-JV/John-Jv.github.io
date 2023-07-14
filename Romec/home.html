@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="MyStyle.css">
+        <script src="for.js"></script>
+    </head>
+    <body style="box-sizing: border-box;" class="bd" id="k" onload="readValue()">
+    <header class="hd">
+        <p id="p"></p>
+        <ul>
+            <li><img class='log' src="depositphotos_98662890-stock-illustration-cinema-compositions-with-text.png"></li>
+            <li class="koy"><h1>Welcome to <strong id="occ"></strong></h1></li>
+       
+        </ul>
+        <ul>
+            <li id="eski"><a class='ho' href='For.html'><b>For</b> <strong id="dlname"></strong></a></li>
+            <li id="oeski"><a class='ho' href='Poem.html'><strong>Poem</strong></a></li>
+        </ul>
+
+    </header>
+    <div>
+        <p>HOT</p>
+ 
+        <table>
+            <tr>
+                <td> <a href='https://hdtoday.ru/movie/about-time-w03k/1-1'><img class='mvs fa' src="AboutTime.jpg"></a> </td>
+                <td><a href="https://hdtoday.ru/movie/after-7wnyy/1-1"><img class='mvs fa' src='After.png' /></a></td>
+                <td><a href="https://hdtoday.ru/movie/a-star-is-born-jjqr2/1-1" ><img class='mvs fa' src="AStarisBorn.jpg" ></a></td>
+                <td><a href="https://hdtoday.ru/movie/five-feet-apart-rj27q/1-1"><img class="mvs fa" src= "FiveFeetApart.jpg"/></a></td>
+                <td> <a href='https://hdtoday.ru/movie/forever-my-girl-4jlq7/1-1'><img class='mvs fa' src='ForeverMyGirl.jpg'></a> </td>
+                <td><a href="https://hdtoday.ru/movie/me-before-you-1kyq/1-1"><img class="mvs fa" src="MeBeforeYou.jpg" /></a></td>
+                <td><a href="https://hdtoday.ru/movie/safe-haven-z24p/1-1"><img class="mvs fa" src="safeHaven.jpeg" /></a></td>
+                <td><a href="https://hdtoday.ru/movie/the-best-of-me-kw3w/1-1"><img class="mvs fa" src='theBestOfMe.jpeg' /></a></td>
+            </tr>
+            <tr>
+                <td><mark><strong>About Time</strong></mark></td>
+                <td><mark><strong>After</strong></mark></td>
+                <td><mark><strong>A Star is Born</strong></mark></td>
+                <td><mark><strong>Five Feet Apart</strong></mark></td>
+                <td><mark><strong>Forever My Girl</strong></mark></td>
+                <td><mark><strong>Me Before You</strong></mark></td>
+                <td><mark><strong>Safe Haven</strong></mark></td>
+                <td><mark><strong>The Best of Me</strong></mark></td>
+            </tr>
+        </table><br><br>
+        <table>
+            <tr>
+                <td><a href="https://hdtoday.ru/movie/the-choice-x068/1-1"><img class="mvs fa" src="theChoice.jpg" /></a></td>
+                <td><a href="https://hdtoday.ru/movie/the-fault-in-our-stars-xj1z/1-1"><img class='mvs fa' src="TheFaultinOurStars .jpg"/></a></td>
+                <td><a href="https://hdtoday.ru/movie/the-last-song-ly1z/1-1" ><img class='mvs fa' src="theLastSong.jpeg"  ></a></td>
+                <td><a href="https://hdtoday.ru/movie/the-longest-ride-pj4/1-1"><img class="mvs fa" src="theLongestRide.jpeg" /></a></td>
+                <td><a href="https://hdtoday.ru/movie/the-notebook-19ow/1-1"><img class="mvs fa" src="theNotebook.jpeg" /></a></td>
+                <td><a href="https://hdtoday.ru/movie/the-vow-39jy/1-1"><img class="mvs fa" src="theVow.jpeg" /></a></td>
+                <td> <a href='https://hdtoday.ru/movie/twilight-lm1m/1-1'><img class='mvs fa' src='Twilight.jpg'></a> </td>
+                <td><a href="https://hdtoday.ru/movie/your-place-or-mine-825lq/1-1"><img class="mvs fa" src="YourPlaceorMine.jpg" /></a></td>
+            </tr>
+            <tr>
+                <td><mark><strong>The Choice</strong></mark></td>
+                <td><mark><strong>The Fault in Our Stars</strong></mark></td>
+                <td><mark><strong>The Last Song</strong></mark></td>
+                <td><mark><strong>The Longest Ride</strong></mark></td>
+                <td><mark><strong>The Notebook</strong></mark></td>
+                <td><mark><strong>The Vow</strong></mark></td>
+                <td><mark><strong>Twilight</strong></mark></td>
+                <td><mark><strong>Your Place or Mine</strong></mark></td>
+            </tr>
+        </table>
+            <footer style=" width: 100%; position: relative;"><p id="foot">&#169 2023 romecinema.com</p></footer>
+        <script>
+            function readValue() {
+                var x = sessionStorage.getItem("occasion");
+                document.getElementById("occ").innerHTML = x;
+                var o=sessionStorage.getItem("lname");
+                document.getElementById("dlname").innerHTML=o;
+               if (x===""){
+                    document.getElementById("occ").innerHTML = "Rome Cinema"
+               } 
+               if (o===""){
+                document.getElementById("dlname").innerHTML="You"
+               }
+            }
+
+        </script>
+    </div>
+    </body>
+    </html>

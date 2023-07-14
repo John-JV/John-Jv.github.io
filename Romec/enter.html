@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FillField</title>
+        <script src="calcm.js"></script>
+        <link rel="stylesheet" href="forms.css">
+        <script src="onf.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body class='bdn' id='k'>
+        <button type="button" onclick="one()" class='but tbut'><b class="span">Dark/Light</b></button>
+       <table class="img" id="i">
+            <tr>
+                <td>
+                    <img src="rc.jpg"  ><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="description">Hi, we are Rome Cinema. We provide selected romantic<br>
+                         movies for romantic occasions and also build a simple and <br>
+                         customizable website based on informations you give us. Have Fun! </span>
+                </td>
+            </tr>
+        </table>
+        <div class="shadow">
+            <form action='' method=''>
+                <span><b style="color: blue;">*</b>To get a description turn the light mode on (On the top right corner)</span><br><br>
+                <label for="name">Enter Your Name</label>
+                    <input id="name"type="text"><br>
+                    <small>Name or some kind of identification to display instead of your name</small><br><br>
+                <label for="o">Enter an occasion</label>
+                    <input type="text" id="o" name='occasion' placeholder='Our 1st Anniversary'><br>
+                    <small>like Our Anniversary, Our valantines day...</small><br><br>
+                <label for="t">Enter a name of a beloved one</label>
+                    <input type="text" id="t" name='name'><br>
+                    <small>A name or a nickname of your beloved one</small><br><br>
+                <label for="n">Write what is in your heart</label><br>
+                <small>Things you want to say</small>
+                    <textarea style="background-color:  #5a5e8f; border-color: #0d1aac; border-radius: 10px; color: aliceblue; resize: none; font-weight: bolder;" name='td' rows="8" cols="90" id="for"></textarea><br><br>
+                <label for="poemTitle">Write a Title of A poem you want your loved one to read(If Any)</label>
+                    <input id="poemTitle" type="text" placeholder="optional"><br><br>
+                <label for="poem">Put the Poem here</label><br>
+                    <small><span style="color: red; font-size: larger;">*</span>put <b style="font-size: larger;">"/"</b> to demark the end of a line</small>
+                    <textarea style="background-color:  #5a5e8f; border-color: #0d1aac; border-radius: 10px; color: aliceblue; resize: none; font-weight: bolder;" name='td' rows="8" cols="90" id="poem" placeholder="optional"></textarea><br><br>                
+                </form> 
+                <a href='home.html'> <button class='btn-grad' onclick="createItem()"><b class="span">Proceed</b></button></a>
+            <script>
+                 function createItem() {
+                    var y=document.getElementById('o').value
+                        sessionStorage.setItem("occasion", y);
+                    var z=document.getElementById('t').value
+                        sessionStorage.setItem('lname',z)
+                    var k=document.getElementById('for').value
+                        sessionStorage.setItem('for',k)
+                    var poemTitle=document.getElementById('poemTitle').value
+                        sessionStorage.setItem('poemTitle',poemTitle)
+                    var poem=document.getElementById('poem').value
+                        sessionStorage.setItem('poem',poem)
+                    var name=document.getElementById('name').value
+                        sessionStorage.setItem('name',name)
+                }
+
+            </script>
+        </div>
+    </body>
+
+</html>

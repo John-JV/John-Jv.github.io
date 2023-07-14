@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>For</title>
+        <link rel="stylesheet" href="MyStyle.css">
+    </head>
+    <body style="background-color: #282D35;" onload="readValue()">
+        <div class="container">
+            <div class="love">
+                <p style="font-size: 50px; letter-spacing: 3px; word-spacing: 7px;"><strong>I L<img class="heart" src="heart.png">ve y<img class='heart' src="heart.png">u </strong></p>
+            </div>
+        </div>
+        <div style="background-color: aqua; opacity: 0.3; margin-left: 400px; margin-right: 400px; padding: 10px; width: 1100px;" id="div">
+            <p style="color:black; font-size: larger; width: 1100px; word-wrap: break-word;" id="txt"></p><p id="br"></p>
+                <script>
+                    function readValue() {
+                         var x = sessionStorage.getItem("for");
+                         var t=document.getElementById('div').length
+                            document.getElementById("txt").innerHTML = x;
+
+                    }
+                </script>
+            </div>
+    </body>
+</html>
